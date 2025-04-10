@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">Tarea02</string>
+    <string name="registro_de_usuario_text">Registro de Usuario</string>
+    <string name="nombre_de_usuario_text">Nombre de usuario:</string>
+    <string name="ingrese_nombre_usuario_text">Ingrese su nombre de usuario</string>
+    <string name="apellido_paterno_text">Apellido paterno:</string>
+    <string name="ingrese_apellido_paterno_text">Ingrese su apellido paterno</string>
+    <string name="apellido_materno_text">Apellido materno:</string>
+    <string name="ingrese_apellido_materno_text">Ingrese su apellido materno</string>
+    <string name="nombre_text">Nombre:</string>
+    <string name="ingrese_nombre_text">Ingrese su nombre</string>
+    <string name="correo_electronico_text">Correo electrónico:</string>
+    <string name="ingrese_correo_electronico_text">Ingrese su correo electrónico</string>
+    <string name="contrasena_text">Contraseña:</string>
+    <string name="ingrese_contrasena_text">Ingrese su contraseña</string>
+    <string name="registrarse_text">Registrarse</string>
 
     <string name="action_search">Buscar</string>
     <string name="action_information">Información</string>

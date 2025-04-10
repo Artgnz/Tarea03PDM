@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registro de Usuario"
+            android:text="@string/registro_de_usuario_text"
             android:textSize="24sp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"/>
@@ -27,82 +27,99 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de usuario:"
+            android:text="@string/nombre_de_usuario_text"
             android:textSize="18sp"
             android:layout_gravity="start" />
+
         <EditText
             android:id="@+id/nombre_de_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre de usuario"/>
+            android:autofillHints="username"
+            android:hint="@string/ingrese_nombre_usuario_text"
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apellido paterno:"
+            android:text="@string/apellido_paterno_text"
             android:textSize="18sp"
             android:layout_gravity="start" />
+
         <EditText
             android:id="@+id/apellido_paterno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su apellido paterno"/>
+            android:hint="@string/ingrese_apellido_paterno_text"
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apellido materno:"
+            android:text="@string/apellido_materno_text"
             android:textSize="18sp"
             android:layout_gravity="start" />
+
         <EditText
             android:id="@+id/apellido_materno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su apellido materno"/>
+            android:hint="@string/ingrese_apellido_materno_text"
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre:"
+            android:text="@string/nombre_text"
             android:textSize="18sp"
             android:layout_gravity="start" />
+
         <EditText
             android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre"/>
+            android:autofillHints="name"
+            android:hint="@string/ingrese_nombre_text"
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correo electrónico:"
+            android:text="@string/correo_electronico_text"
             android:textSize="18sp"
             android:layout_gravity="start" />
+
         <EditText
             android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su correo electrónico"
-            android:inputType="textEmailAddress"/>
+            android:autofillHints="emailAddress"
+            android:hint="@string/ingrese_correo_electronico_text"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contraseña:"
+            android:text="@string/contrasena_text"
             android:textSize="18sp"
             android:layout_gravity="start" />
+
         <EditText
             android:id="@+id/contrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su contraseña"
-            android:inputType="textPassword"/>
+            android:hint="@string/ingrese_contrasena_text"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/boton_registrar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
-            android:layout_marginTop="20dp"/>
+            android:text="@string/registrarse_text"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="32dp"/>
     </LinearLayout>
 </ScrollView>
