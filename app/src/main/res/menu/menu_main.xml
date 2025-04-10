@@ -20,7 +20,7 @@
         android:id="@+id/action_more"
         android:icon="@android:drawable/ic_menu_more"
         android:title="@string/action_more"
-        app:showAsAction="never">
+        app:showAsAction="always">
         <menu>
             <!-- Opciones del submenu -->
             <item
