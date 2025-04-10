@@ -1,139 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:scrollbarStyle="outsideOverlay"
-        android:scrollbarSize="8dp"
-        android:scrollbarThumbVertical="@android:color/darker_gray"
-        android:scrollbarTrackVertical="@android:color/background_light">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:gravity="center">
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/registro_de_usuario_text"
-                android:textSize="24sp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarSize="8dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbarTrackVertical="@android:color/background_light">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nombre_de_usuario_text"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
-
-            <EditText
-                android:id="@+id/nombre_de_usuario"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="username"
-                android:hint="@string/ingrese_nombre_usuario_text"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/apellido_paterno_text"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registro_de_usuario_text"
+                    android:textSize="24sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"/>
 
-            <EditText
-                android:id="@+id/apellido_paterno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/ingrese_apellido_paterno_text"
-                android:minHeight="48dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_de_usuario_text"
+                    android:textSize="18sp"
+                    android:layout_gravity="start" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/apellido_materno_text"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
+                <EditText
+                    android:id="@+id/nombre_de_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="username"
+                    android:hint="@string/ingrese_nombre_usuario_text"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
 
-            <EditText
-                android:id="@+id/apellido_materno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/ingrese_apellido_materno_text"
-                android:minHeight="48dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellido_paterno_text"
+                    android:textSize="18sp"
+                    android:layout_gravity="start" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nombre_text"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
+                <EditText
+                    android:id="@+id/apellido_paterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingrese_apellido_paterno_text"
+                    android:minHeight="48dp" />
 
-            <EditText
-                android:id="@+id/nombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="name"
-                android:hint="@string/ingrese_nombre_text"
-                android:minHeight="48dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellido_materno_text"
+                    android:textSize="18sp"
+                    android:layout_gravity="start" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/correo_electronico_text"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
+                <EditText
+                    android:id="@+id/apellido_materno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingrese_apellido_materno_text"
+                    android:minHeight="48dp" />
 
-            <EditText
-                android:id="@+id/correo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="emailAddress"
-                android:hint="@string/ingrese_correo_electronico_text"
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_text"
+                    android:textSize="18sp"
+                    android:layout_gravity="start" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contrasena_text"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
+                <EditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:hint="@string/ingrese_nombre_text"
+                    android:minHeight="48dp" />
 
-            <EditText
-                android:id="@+id/contrasena"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/ingrese_contrasena_text"
-                android:inputType="textPassword"
-                android:minHeight="48dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correo_electronico_text"
+                    android:textSize="18sp"
+                    android:layout_gravity="start" />
 
-            <Button
-                android:id="@+id/boton_registrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/registrarse_text"
-                android:layout_marginTop="20dp"
-                android:paddingHorizontal="32dp"/>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+                <EditText
+                    android:id="@+id/correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="emailAddress"
+                    android:hint="@string/ingrese_correo_electronico_text"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contrasena_text"
+                    android:textSize="18sp"
+                    android:layout_gravity="start" />
+
+                <EditText
+                    android:id="@+id/contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingrese_contrasena_text"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+
+                <Button
+                    android:id="@+id/boton_registrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registrarse_text"
+                    android:layout_marginTop="20dp"
+                    android:paddingHorizontal="32dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer"/>
+</androidx.drawerlayout.widget.DrawerLayout>

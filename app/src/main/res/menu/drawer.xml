@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_vault"
+            android:icon="@drawable/vault_solid"
+        android:title="Password Vault" />
+
+        <item
+            android:id="@+id/nav_generator"
+            android:icon="@drawable/lock_solid"
+        android:title="Password Generator" />
+
+        <item
+            android:id="@+id/nav_secure_notes"
+            android:icon="@drawable/note_sticky_regular"
+        android:title="Secure Notes" />
+
+    </group>
+</menu>
