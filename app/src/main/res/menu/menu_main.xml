@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_search" />
+
+    <item
+        android:id="@+id/action_information"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_information" />
+
+    <!-- Submenu de los tres puntos -->
+    <item
+        android:id="@+id/action_more"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="@string/action_more"
+        app:showAsAction="never">
+        <menu>
+            <!-- Opciones del submenu -->
+            <item
+                android:id="@+id/action_profile"
+                android:title="@string/action_profile" />
+            <item
+                android:id="@+id/action_settings"
+                android:title="@string/action_settings" />
+        </menu>
+    </item>
+
+</menu>
