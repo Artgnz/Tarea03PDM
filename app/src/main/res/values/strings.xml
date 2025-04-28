@@ -20,5 +20,9 @@
     <string name="action_more">Más</string>
     <string name="action_profile">Perfil</string>
     <string name="action_settings">Configuración</string>
-
+    <string name="password_vault">Bóveda de contraseñas</string>
+    <string name="password_generator">Generador de contraseñas</string>
+    <string name="secure_notes">Notas seguras</string>
+    <string name="nav_open">Abrir</string>
+    <string name="nav_close">Cerrar</string>
 </resources>
